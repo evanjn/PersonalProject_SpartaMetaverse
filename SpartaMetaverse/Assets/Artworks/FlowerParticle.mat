@@ -8,20 +8,20 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: FlowerParticle
-  m_Shader: {fileID: 4800000, guid: 128e987d567d4e2c824d754223b3f3b0, type: 3}
+  m_Shader: {fileID: 211, guid: 0000000000000000f000000000000000, type: 0}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords:
-  - _ALPHAMODULATE_ON
-  - _COLORADDSUBDIFF_ON
-  - _EMISSION
+  m_ValidKeywords:
+  - _ALPHATEST_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
+  m_CustomRenderQueue: 2450
+  stringTagMap:
+    RenderType: TransparentCutout
+  disabledShaderPasses:
+  - GRABPASS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
@@ -79,7 +79,7 @@ Material:
     - _CameraFarFadeDistance: 1
     - _CameraNearFadeDistance: 1
     - _ColorMask: 15
-    - _ColorMode: 5
+    - _ColorMode: 0
     - _Cull: 2
     - _CullMode: 0
     - _Cutoff: 0.033
@@ -88,18 +88,18 @@ Material:
     - _DistortionEnabled: 0
     - _DistortionStrength: 18.29
     - _DistortionStrengthScaled: 1.8290001
-    - _DstBlend: 10
+    - _DstBlend: 0
     - _EmissionEnabled: 0
     - _EnableExternalAlpha: 0
     - _FlipbookMode: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _LightingEnabled: 1
+    - _LightingEnabled: 0
     - _MaskSoftnessX: 0
     - _MaskSoftnessY: 0
     - _Metallic: 0
-    - _Mode: 6
+    - _Mode: 1
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
@@ -107,7 +107,7 @@ Material:
     - _SoftParticlesFarFadeDistance: 1
     - _SoftParticlesNearFadeDistance: 1
     - _SpecularHighlights: 1
-    - _SrcBlend: 2
+    - _SrcBlend: 1
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -116,7 +116,7 @@ Material:
     - _UVSec: 0
     - _VertexOffsetX: 0
     - _VertexOffsetY: 0
-    - _ZWrite: 0
+    - _ZWrite: 1
     m_Colors:
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _ClipRect: {r: -32767, g: -32767, b: 32767, a: 32767}
